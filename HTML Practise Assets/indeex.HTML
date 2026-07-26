@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./styles  .css">
+
   <meta charset="UTF-8">
-  <meta
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
   <section>
     <nav>
-      <img src="./HTML Practise Assets/FES.svg" alt="fes logo"
+      <img src="./FES.svg" alt="FES logo" class="logo">
     
       <ul>
       <li><a href="./about.jpg">About</a></li>
-        <li><a href="./discord.png">discord</a></li>
+        <li><a href="./discord.png">Discord</a></li>
         <li><a href="./contact.jpg">Contact</a></li>
       </ul>
     </nav>
     <header>
-      <h1> best place to learn frontend development
-        <p>go from beginer to pro quickly</p>
-        <button>start now</button>
-        <div> 
-           <figure>
-            <img src="./HTML Practise Assets/FES.svg" alt="fes logo "
-          </figure>
+      <div class="header-text">
+        <div class="row">
+          <h1> Best place to learn frontend development. </h1>
+        </div>
+        <div class="subheader">
+          Go from beginer to pro quickly.
+          <div class="button">
+            <button>start now</button>
+          </div>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="./laptop.png" alt="laptop">
+      </figure>
     </header>
 
   </section>
   <main>
-    <section> id="about">
+    <section id="about">
       <h2>About</h2>
-      <div>
-        <p>Frontend development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data. The challenge associated with front end development is that the tools and techniques used to create the front end of a website are constantly changing and evolving. This means that front end developers must be constantly learning and adapting to new technologies and techniques in order to stay current in their field.</p>
+      <div class="section__description">
+        <div class="section__text">
+          <p>Frontend development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.</p>
+          <p>The challenge associated with front end development is that the tools and techniques used to create the front end of a website are constantly changing and evolving. This means that front end developers must be constantly learning and adapting to new technologies and techniques in order to stay current in their field.</p>
+        </div>
+        <figure class="about-image">
+          <img src="./about.jpg" alt="about image">
+        </figure>
       </div>
-  <figure> 
-    <img src="./about.jpg"alt="about image" 
-
-  </figure>
     </section>
     <section id="discord">
-      <h2>discord</h2>
-      <div>
-        <p>Discord is a free voice, video, and text chat platform used by over 100 million people to hang out and talk with their communities and friends. Discord is available on Windows, macOS, Android, iOS, Linux, and in web browsers.</p>
+      <h2>Discord</h2>
+      <div class="section__description">
+        <figure class="discord-image">
+          <img src="discord.png" alt="discord image">
+        </figure>
+        <div class="section__text">
+          <p>Discord is a free voice, video, and text chat platform used by over 100 million people to hang out and talk with their communities and friends. Discord is available on Windows, macOS, Android, iOS, Linux, and in web browsers.</p>
+        </div>
       </div>
-      <figure>
-        <img src="discord.png" alt="discord image">
-      </figure>
     </section>
+
     <section id="contact">
       <h2>Contact</h2>
-      <div>
-        <p>Contact us for any queries or support. We are here to help you with your frontend development journey.</p>
-      </div>
-      <figure>
-        <img src="contact.jpg" alt="contact image">
-      </figure>
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
+<footer>
+    <div class="footer-content">
+      <img src="./FES.svg" alt="FES logo" class="footer-logo">
+  
+    </div>
+  </footer>
 </body>
 </html>
